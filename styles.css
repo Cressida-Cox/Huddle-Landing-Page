@@ -1,4 +1,93 @@
 :root {
-  --heading-font: "Open Sans", sans-serif;
-  --body-font: "Poppins", sans-serif;
+  --heading-font: "Poppins", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+  --primary-color: hsl(257, 40%, 49%);
+  --secondary-color: hsl(300, 69%, 71%);
+  --icon-hover-color: hsl (322, 100%, 66%);
+}
+
+body {
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  display: grid;
+  margin: 60px 80px 40px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section img {
+  max-width: 696px;
+  max-height: 493px;
+}
+
+article {
+  max-width: 520px;
+  padding-left: 59px;
+  padding-top: 32px;
+  font-style: normal;
+  color: #fff;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+p {
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+button {
+  background: #ffffff;
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  border-radius: 28px;
+  border: 1px solid #fff;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--primary-color);
+  padding: 15px 64px;
+  margin-top: 24px;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+  transition: 150ms ease-in-out;
+}
+
+footer {
+  display: flex;
+  align-items: end;
+}
+
+footer a {
+  margin: 0px 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+footer a:hover {
+  color: #fff;
+  font-size: 17px;
+  transition: 150ms ease-in-out;
 }
